@@ -4,10 +4,6 @@ package euclid
 
 import "testing"
 
-// A function signature for implementation of Euclid's algorithm
-// to find the greatest common divisor of two positive integers.
-type gcd_func func(m, n int) int
-
 // Functions with slightly different implementations to find
 // the greatest commond divisor using Euclid's algorithm.
 var gcd_funcs = [...]gcd_func{

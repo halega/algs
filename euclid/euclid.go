@@ -27,6 +27,10 @@ package euclid
 
 import "errors"
 
+// A function signature for implementation of Euclid's algorithm
+// to find the greatest common divisor of two positive integers.
+type gcd_func func(m, n int) int
+
 func GCD(m, n int) (int, error) {
 	return gcd(m, n, gcd_fs)
 }
